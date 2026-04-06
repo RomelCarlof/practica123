@@ -1,6 +1,8 @@
 Proceso sin_titulo
 	numero1 = 0
 	numero2 = 0
+
+    
 	
 	Escribir "Escribir el primer nuemro a restar"
 
