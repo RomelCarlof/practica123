@@ -1,21 +1,43 @@
-Proceso sin_titulo
+Proceso Calculadora
 	numero1 = 0
 	numero2 = 0
+	operacion = 0
+	resultado = 0
+	
 	
 	Escribir "Escribir el primer número"
-
 	Leer numero1
 	Escribir "Escribir el segundo número "
 	Leer numero2
 	
-	Suma = numero1 + numero2;
-	multiplicación= numero1 * numero2;
-	resta = numero1 - numero2;
-	division = numero1 / numero2;
+	Escribir "Esgoge  una operación : 1 para SUMAR, 2 para RESTAR, 3 para Multiplicar o 4 para DIVIDIR"
 	
-	Escribir "Suma: ", suma
-	Escribir "Multiplicacion: ", multiplicacion
-	Escribir "Resta: ", resta
-	Escribir "Division: ", division
+	Leer operacion
+	
+	Si operacion == 1 Entonces
+		resultado = numero1 + numero2
+	SiNo
+		Escribir " Escogio: " operacion
+	Fin Si
+	
+	Si operacion == 2 Entonces
+		resultado = numero1 - numero2
+	SiNo
+		Escribir " Escogio: " operacion
+	Fin Si
+	
+	Si operacion == 3 Entonces
+		resultado = numero1 * numero2
+	SiNo
+		Escribir " Escogio: " operacion
+	Fin Si
+	
+	Si operacion == 4 Entonces
+		resultado = numero1 / numero2
+	SiNo
+		Escribir " Escogio: " operacion
+	Fin Si
+	
+	Escribir " El resultado es : " resultado
 	
 FinProceso
