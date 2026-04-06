@@ -17,25 +17,20 @@ Proceso Calculadora
 	Si operacion == 1 Entonces
 		resultado = numero1 + numero2
 	SiNo
-		Escribir " Escogio: " operacion
-	Fin Si
+		Si operacion == 2 Entonces
+			resultado = numero1 - numero2
+		SiNo
+			Si operacion == 3 Entonces
+				resultado = numero1 * numero2
+			SiNo
+				Si operacion == 4 Entonces
+					resultado = numero1 / numero2
+				SiNo
+					Escribir " Escogio: " operacion
+				Fin Si
+			Fin Si
+		Fin Si
 	
-	Si operacion == 2 Entonces
-		resultado = numero1 - numero2
-	SiNo
-		Escribir " Escogio: " operacion
-	Fin Si
-	
-	Si operacion == 3 Entonces
-		resultado = numero1 * numero2
-	SiNo
-		Escribir " Escogio: " operacion
-	Fin Si
-	
-	Si operacion == 4 Entonces
-		resultado = numero1 / numero2
-	SiNo
-		Escribir " Escogio: " operacion
 	Fin Si
 	
 	Escribir " El resultado es : " resultado
